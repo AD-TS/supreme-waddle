@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 /">
+<!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+
+  <!--Bootstrap JS-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- MY JS-->
+  <script src="main.js"></script>
+
+  <!--MY CSS-->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Font Awesome-->
+
+  <script src="https://kit.fontawesome.com/371cf4a1ee.js" crossorigin="anonymous"></script>
+
+
+    <title>Pomodoro App</title>
+  </head>
+
+  <body onload="template()">
+    <div class="container">
+      <!--Heading-->
+      <h1 class="text-center my-5 heading">Pomodoro App</h1>
+
+      <!-- Main Timer-->
+      <div class="container timer">
+        <div class="row">
+          <div class="col-5">
+            <h2 id="minutes"></h2>
+          </div>
+          <div class="col-2">
+              <h4>:</h4>
+            </div>
+            <div class="col-5">
+                <h2 id="seconds"></h2>
+              </div>
+        </div>
+      </div>
+
+      <!-- Start and Reset buttons -->
+      <div class="container d-flex justify-content-center align-items-center my-5">
+        <button class="btn" onclick="start()"><i class="fas fa-play fa-3x"></i></button>
+        <a href="index.html"><i class="fas fa-redo fa-3x"></i></a>
+      </div>
+
+
+
+    </div>
+
+  </body>
+</html>
